@@ -36,12 +36,12 @@ void clrsc()
 void up()
 {
 fup=0;
-for(i=0;i<3;i++)
+for(i=0;i<3;++i)
 {
-	for(j=0;j<4;j++)
+	for(j=0;j<4;++j)
 	{
 		if(grid[i][j]==0)
-			for(k=i+1;k<4;k++)
+			for(k=i+1;k<4;++k)
 			{
 				if(grid[k][j])
 				{
